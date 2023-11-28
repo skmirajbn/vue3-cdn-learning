@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is VueJs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h3>Hello Vue Js</h3>
+    </header>
+
+    <div id="app">
+      <input type="text" v-model="mobile" placeholder="Enter 11 digit mobile number" /><br /><br />
+
+      <input type="text" placeholder="Enter First name" v-model="name.firstName" />
+      <input type="text" placeholder="Enter Last name" v-model="name.lastName" />
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
