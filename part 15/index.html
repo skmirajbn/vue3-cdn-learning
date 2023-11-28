@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is VueJs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h3>Hello Vue Js</h3>
+    </header>
+
+    <div id="app">
+      <input type="text" placeholder="write your review" v-model="review" />
+
+      <h3>Skills</h3>
+      <ul>
+        <li v-for="skill in skills" @click="removeSkill">{{ skill.name }} - {{ skill.experience }}</li>
+      </ul>
+
+      <h3>Total {{ totalCountComputed }}</h3>
+
+      <h3>Expereinced Skill</h3>
+      <ul>
+        <li v-for="skill in experiencedSkills">{{ skill.name }}</li>
+      </ul>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
