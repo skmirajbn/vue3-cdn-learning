@@ -9,7 +9,14 @@
 
 <script>
 export default {
-  props: ["name", "website", "mobile"],
+  props: {
+    name: String,
+    website: String,
+    mobile: {
+      type: String,
+      required: true,
+    },
+  },
   data() {
     return {};
   },
