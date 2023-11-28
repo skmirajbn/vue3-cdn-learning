@@ -13,18 +13,11 @@
     </header>
 
     <div id="app">
-      <h3>Enter a Number</h3>
-      <input type="number" v-model.number="num" />
+      <button :class="{ active: activeClass == 'red', }" @click="setClass('red')">Red</button>
+      <button :class="{ active: activeClass == 'green' }" @click="setClass('green')">Green</button>
+      <button :class="{ active: activeClass == 'blue' }" @click="setClass('blue')">Blue</button>
       <br />
-      <br />
-      <button @click="getDouble">Get Double</button>
-      <button @click="getSquare">Get Square</button>
-      <button @click="addTen">Add 10</button>
-      <button @click="reset">Reset</button>
-      <hr />
-      <label>Entered Number: {{ num }} </label>
-      <br />
-      <label>Result: {{ result }}</label>
+      <div :class="activeClass"></div>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
