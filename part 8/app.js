@@ -1,7 +1,7 @@
 let app = Vue.createApp({
   data() {
     return {
-      num: 0,
+      num: "",
       result: "",
     };
   },
@@ -15,6 +15,9 @@ let app = Vue.createApp({
     },
     getSquare() {
       this.result = this.num * this.num;
+    },
+    addTen() {
+      this.result = this.num + 10;
     },
     reset() {
       this.num = "";
