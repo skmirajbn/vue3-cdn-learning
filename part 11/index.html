@@ -14,10 +14,10 @@
 
     <div id="app">
       <h3>Skills</h3>
-      <input type="text" v-model="newSkill" @keyup.enter="addSkill" />
+      <input type="text" v-model="newSkill.name" @keyup.enter="addSkill" />
       <button @click="addSkill">Add</button>
       <ul>
-        <li v-for="(skill , index) in skills">{{ index+1 }} {{ skill }}</li>
+        <li v-for="(skill , index) in skills" @click="removeSkill(index)">{{ index+1 }} {{ skill.name }} ({{ skill.experience }})</li>
       </ul>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
