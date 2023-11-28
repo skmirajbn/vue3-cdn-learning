@@ -12,6 +12,14 @@ let app = Vue.createApp({
     handleFormSubmit(e) {
       console.log(e);
     },
+    handleCardClick(e) {
+      console.log(e);
+      console.log("card clicked");
+    },
+    handleViewClick(e) {
+      console.log(e);
+      console.log("view clicked");
+    },
   },
 });
 

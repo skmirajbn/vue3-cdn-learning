@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This is VueJs</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
@@ -18,6 +19,11 @@
         <p>Welcome {{ name }}!</p>
         <button type="submit">ok</button>
       </form>
+
+      <hr />
+      <div class="card" @click="handleCardClick">
+        <button @click.stop="handleViewClick">View</button>
+      </div>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
