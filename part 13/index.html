@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is VueJs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h3>Hello Vue Js</h3>
+    </header>
+
+    <div id="app">
+      <h3>About Me</h3>
+      <table border="1" style="border-collapse: collapse">
+        <tr v-for="(item, key, i) in aboutMe">
+          <td>{{ i }}</td>
+          <td>{{ key }}</td>
+          <td>{{ item }}</td>
+        </tr>
+      </table>
+
+      <h3>Skills</h3>
+      <p>
+        <template v-for="(skill, index) in skills" :key="skill.name">
+          {{ skill.name }}
+          <span v-if="index !== skills.length - 1">,</span>
+        </template>
+      </p>
+      <br />
+      <div>
+        <p v-for="i in 5">{{ i }}</p>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
