@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ message }}</h1>
-    <contact-details></contact-details>
+    <contact-details name="Sk Miraj" mobile="01700 000 000" website="www.skmiraj.com"></contact-details>
   </div>
 </template>
 
