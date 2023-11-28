@@ -13,9 +13,10 @@
     </header>
 
     <div id="app">
-      <button :class="{ active: activeClass == 'red', }" @click="setClass('red')">Red</button>
-      <button :class="{ active: activeClass == 'green' }" @click="setClass('green')">Green</button>
-      <button :class="{ active: activeClass == 'blue' }" @click="setClass('blue')">Blue</button>
+      <button class="button" :class="{ active: activeClass == 'red', }" @click="setClass('red')">Red</button>
+      <button class="button" :class="{ active: activeClass == 'green' }" @click="setClass('green')">Green</button>
+      <button class="button" :class="{ active: activeClass == 'blue' }" @click="setClass('blue')">Blue</button>
+      <button :class="['active', 'button']">Button</button>
       <br />
       <div :class="activeClass"></div>
     </div>
