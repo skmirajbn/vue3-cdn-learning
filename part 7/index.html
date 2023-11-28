@@ -12,10 +12,12 @@
     </header>
 
     <div id="app">
-      <h2>Counter {{ count }}</h2>
-      <button @click="increment(5)">Increment</button>
-      <button @click="decrement(1)">Decrement</button>
-      <button @click="test">Test</button>
+      <form @submit.prevent="handleFormSubmit">
+        <h3>Enter your name</h3>
+        <input type="text" @keyup.enter="handleKeyup" />
+        <p>Welcome {{ name }}!</p>
+        <button type="submit">ok</button>
+      </form>
     </div>
 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

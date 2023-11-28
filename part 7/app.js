@@ -1,17 +1,15 @@
 let app = Vue.createApp({
   data() {
     return {
-      count: 0,
+      name: "",
     };
   },
   methods: {
-    increment(amount) {
-      this.count += amount;
+    handleKeyup(e) {
+      console.log(e.target.value);
+      this.name = e.target.value;
     },
-    decrement(amount) {
-      this.count -= amount;
-    },
-    test(e) {
+    handleFormSubmit(e) {
       console.log(e);
     },
   },
