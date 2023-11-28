@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This is VueJs</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h3>Hello Vue Js</h3>
+    </header>
+
+    <div id="app">
+      <h3>Enter a Number</h3>
+      <input type="text" v-model="num" @input="handleInput" />
+      <br />
+      <br />
+      <button @click="getDouble">Get Double</button>
+      <button @click="getSquare">Get Square</button>
+      <button @click="reset">Reset</button>
+      <hr />
+      <label>Entered Number: {{ num }} </label>
+      <br />
+      <label>Result: {{ result }}</label>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
