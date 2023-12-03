@@ -5,7 +5,7 @@
 
   <div>
     <input type="text" placeholder="Enter your name" ref="nameInput" />
-    <the-comment heading="This is the heading from props"></the-comment>
+    <the-comment heading="This is the heading from props" ref="comment"></the-comment>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     };
   },
   mounted() {
-    console.log(this.$refs.nameInput);
+    console.log(this.$refs.comment);
   },
   components: {
     TheComment,
