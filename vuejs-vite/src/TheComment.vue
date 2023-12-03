@@ -18,6 +18,13 @@
     <label><input type="radio" name="gender" value="male" v-model="formData.gender" /> Male</label>
     <label><input type="radio" name="gender" value="female" v-model="formData.gender" /> Female</label>
     <label><input type="radio" name="gender" value="other" v-model="formData.gender" /> Other</label>
+
+    <label>Langulage</label><br />
+    <select v-model="formData.language">
+      <option value="">Select One</option>
+      <option value="bangla">Bangla</option>
+      <option value="english">English</option>
+    </select>
   </div>
   <hr />
 
@@ -36,6 +43,7 @@ export default {
         fullName: "",
         aboutYou: "",
         gender: "",
+        language: "",
       },
     };
   },
