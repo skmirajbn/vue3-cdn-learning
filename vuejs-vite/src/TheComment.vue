@@ -25,6 +25,17 @@
       <option value="bangla">Bangla</option>
       <option value="english">English</option>
     </select>
+
+    <br /><br />
+
+    <label>Skills</label><br />
+    <select v-model="formData.skills" multiple>
+      <option value="">Select Skills</option>
+      <option value="bangla">Php</option>
+      <option value="english">Laravel</option>
+      <option value="react">React</option>
+      <option value="vue">Vue</option>
+    </select>
   </div>
   <hr />
 
@@ -44,6 +55,7 @@ export default {
         aboutYou: "",
         gender: "",
         language: "",
+        skills: [],
       },
     };
   },
